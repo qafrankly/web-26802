@@ -2,52 +2,60 @@
   
   "tag": "QA",
   "affiliates": ["KOTV,qaFrankly,wndemo"],
-  "propTypes": {
-    "title": "PropTypes.string",
-    "showTitle": "PropTypes.bool",
-    "showAbstract": "PropTypes.bool",
-    "addMetaTags": "PropTypes.bool",
-    "showTimestamp": "PropTypes.bool",
-    "timestampOptions": "PropTypes.object",
-    "addthisOptions": "PropTypes.object",
-    "comments": "PropTypes.object",
-    "url": "PropTypes.string.isRequired",
-    "dimensionsPerBreakpoint": "PropTypes.object",
-    "showBorder": "PropTypes.bool",
-    "borderColor": "PropTypes.string",
-    "enableFullScreen": "PropTypes.bool",
-    "sandbox": "PropTypes.string",
-    "titleType": "PropTypes.string"    
-  },
-  "customProps": {
-    "addthisOptions": {
-      "className": "PropTypes.string.isRequired",
-      "position": "PropTypes.string"
-    },
-    "timestampOptions": {
-      "showElapsedTime": "PropTypes.bool",
-      "displayShortDateTime": "PropTypes.bool"
-    }
-  },
-  "defaultProps": {
-    "showTitle": true,
-    "showAbstract": false,
-    "addMetaTags": true,
-    "showTimestamp": false,
-    "url": "http://content.wdtinc.com/imap/imaplite?MAPID=15624&CLIENTID=20558",
-    "showBorder": true,
-    "enableFullScreen": true,
-    "titleType": "Module Title",
-    "comments": {
-      "componentId": "components/social/FacebookComments",
-      "componentProps": {
-        "appId": "696230113879689",
-        "numPosts": 5
-      }
-    }
-  },
-  "propChoices": {
-    "titleType": ["Module Title", "Page Title"]
-  },
-  "icon": "icon_stroke_custom.svg"
-}
+   "components": [
+                    {
+                        "id": "components/shared/IFrame",
+                        "FRN_style": {},
+                        "FRN_primaryContentSource": true,
+                        "FRN_resourceEndpoints": [
+                            {
+                                "url": "http://wnow.dsys1.franklyinc.com/link/${id}/x?clienttype=container.json",
+                                "type": "json"
+                            }
+                        ],
+                        "visualInfo": {
+                            "affiliate": "wnow"
+                        },
+                        "props": {
+                            "title": "HELLO IFRAME",
+                            "url": "http://kmov.titantv.com/",
+                            "dimensionsPerBreakpoint": {
+                                "xs": {
+                                    "width": 20,
+                                    "height": 20
+                                },
+                                "md": {
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                "xl": {
+                                    "width": 1000,
+                                    "height": 1000
+                                }
+                            },
+                            "showBorder": false,
+                            "borderColor": "#000000",
+                            "enableFullScreen": true,
+                            "sandbox": "",
+                            "titleType": "Module Title",
+                            "showAbstract": true,
+                            "showTimestamp": true,
+                            "timestampOptions": {
+                                "showElapsedTime": false,
+                                "displayShortDateTime": false
+                            },
+                            "addMetaTags": true,
+                            "comments": {
+                                "componentId": "components/social/FacebookComments",
+                                "componentProps": {
+                                    "appId": "696230113879689",
+                                    "numPosts": 5
+                                }
+                            },
+                            "addthisOptions": {
+                                "className": "addthis_inline_share_toolbox",
+                                "position": "below-body"
+                            }
+                        }
+                    }
+                ]
