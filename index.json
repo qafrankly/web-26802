@@ -1,0 +1,53 @@
+{
+  
+  "tag": "QA",
+  "affiliates": ["KOTV,qaFrankly,wndemo"],
+  "propTypes": {
+    "title": "PropTypes.string",
+    "showTitle": "PropTypes.bool",
+    "showAbstract": "PropTypes.bool",
+    "addMetaTags": "PropTypes.bool",
+    "showTimestamp": "PropTypes.bool",
+    "timestampOptions": "PropTypes.object",
+    "addthisOptions": "PropTypes.object",
+    "comments": "PropTypes.object",
+    "url": "PropTypes.string.isRequired",
+    "dimensionsPerBreakpoint": "PropTypes.object",
+    "showBorder": "PropTypes.bool",
+    "borderColor": "PropTypes.string",
+    "enableFullScreen": "PropTypes.bool",
+    "sandbox": "PropTypes.string",
+    "titleType": "PropTypes.string"    
+  },
+  "customProps": {
+    "addthisOptions": {
+      "className": "PropTypes.string.isRequired",
+      "position": "PropTypes.string"
+    },
+    "timestampOptions": {
+      "showElapsedTime": "PropTypes.bool",
+      "displayShortDateTime": "PropTypes.bool"
+    }
+  },
+  "defaultProps": {
+    "showTitle": true,
+    "showAbstract": false,
+    "addMetaTags": true,
+    "showTimestamp": false,
+    "url": "http://content.wdtinc.com/imap/imaplite?MAPID=15624&CLIENTID=20558",
+    "showBorder": true,
+    "enableFullScreen": true,
+    "titleType": "Module Title",
+    "comments": {
+      "componentId": "components/social/FacebookComments",
+      "componentProps": {
+        "appId": "696230113879689",
+        "numPosts": 5
+      }
+    }
+  },
+  "propChoices": {
+    "titleType": ["Module Title", "Page Title"]
+  },
+  "icon": "icon_stroke_custom.svg"
+}
